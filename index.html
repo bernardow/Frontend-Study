@@ -13,16 +13,16 @@
 <body>
     <header>
         <div class="container">
-            <img src="/rsc/images" alt="chapeu de formatura">
+            <img src="" alt="chapeu de formatura">
             <h1>Calculadora de medias</h1>
         </div>
     </header>
     <main>
         <div class="container">
-            <form>
-                <input type="text" placeholder="Nome da atividade" readonly>
-                <input type="number" placeholder="Nota" max="10" min="0" required>
-                <button type="submit">Adicionar +</button>
+            <form id="formAtividade">
+                <input id="textName" type="text" placeholder="Nome da atividade" required>
+                <input id="textNota" type="number" placeholder="Nota" max="10" min="0" required>
+                <button id="btnSubmit" type="submit">Adicionar +</button>
             </form>
             <table cellSpacing="0">
                 <thead>
@@ -33,21 +33,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Atividade 1</td>
-                        <td>7</td>
-                        <td>:)</td>
-                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>Nota media</td>
-                        <td>7</td>
-                        <td><span class="resultado">Aprovado</span></td>
+                        <td>...</td>
+                        <td>...</td>
                     </tr>
                 </tfoot>
             </table>
         </div>
+        <script src="/main.js"></script>
     </main>
 </body>
 </html>
