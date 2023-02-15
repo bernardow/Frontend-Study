@@ -53,7 +53,7 @@ ul{
 }
 
 ul li{
-    max-width: 25%;
+    max-width: 20%;
     list-style: none;
     position: relative;
     max-height: 170px;
@@ -87,5 +87,4 @@ ul li img{
 ul li:hover .overlay-imgLink{
     opacity: 1;
 }
-
 
