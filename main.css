@@ -4,3 +4,122 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav{
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+#about img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+.veiculosList{
+    flex-wrap: wrap;
+}
+
+.veiculosList li{
+    display: block;
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.veiculosList li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.veiculosList li h3{
+    margin: 16px 0;
+}
+
+.veiculosList li img{
+    width: 100%;
+}
+
+.itemCentral{
+    margin: 0 5%;
+}
+
+.price del{
+    color: gray;
+    font-size: 14px;
+}
