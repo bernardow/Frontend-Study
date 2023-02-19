@@ -7,6 +7,7 @@
 
 body{
     overflow-x: hidden;
+    background-color: #33302a;
 }
 
 .container{
@@ -83,11 +84,13 @@ header .container .rightSide form button{
 main{
     display: flex;
     color: beige;
+    
 }
 
 #sideMenu{
     background-color: #2a2926;
-    padding: 150px 80px;
+    padding: 150px 5%;
+    display: none;
 }
 
 #sideMenu li{
@@ -95,23 +98,79 @@ main{
     margin-bottom: 48px;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.content{
+    display: block;
+    margin: 0 auto;
+}
+
+#feed > .container, #playlists > .container{
+    display: block;
+    width: 960px;
 }
 
 #feed{
     background-color: #33302a;
-    padding: 70px 0;
-    margin: 0 auto;
+    display: block;
+    padding: 60px 0;
     width: 100%;
     
 }
 
 #feed .carousel{
-    max-height: 450px;
-    max-width: 750px;
-    margin: 0 auto;
+    width: 100%;
     border-radius: 10px;
 }
 
 .carousel img{
     border-radius: 10px;
 }
+
+.sectBar{
+    width: 100%;
+    position: relative;
+}
+
+.sectBar span{
+    width: 100%;
+    background-color: #5f584a;
+    height: 16px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+#playlists{
+    background-color: #33302a;
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+}
+
+h2{
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+
+.playlistsLists{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.playlistsLists img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.playlistsLists li{
+    width: 30%;
+    list-style: none;
+    margin-bottom: 42px;
+}
+
+.itemCentral{
+    margin: 0 32px;
+}
+
