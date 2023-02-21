@@ -96,9 +96,14 @@ main{
 #sideMenu li{
     list-style: none;
     margin-bottom: 48px;
+}
+
+#sideMenu li a{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    color: beige;
+    text-decoration: none;
 }
 
 .content{
@@ -106,7 +111,9 @@ main{
     margin: 0 auto;
 }
 
-#feed > .container, #playlists > .container{
+#feed > .container,
+#playlists > .container,
+#artists > .container{
     display: block;
     width: 960px;
 }
@@ -121,7 +128,6 @@ main{
 
 #feed .carousel{
     width: 100%;
-    border-radius: 10px;
 }
 
 .carousel img{
@@ -160,17 +166,43 @@ h2{
 }
 
 .playlistsLists img{
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, .4);
+    padding: 8px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+    height: 30%;
 }
 
 .playlistsLists li{
     width: 30%;
     list-style: none;
     margin-bottom: 42px;
+    position: relative;
 }
 
 .itemCentral{
     margin: 0 32px;
+}
+
+#artists{
+    background-color: #33302a;
+    display: block;
+    padding: 60px 0;
+    width: 100%;
+    
+}
+
+#artists .artistCarousel{
+    width: 50%;
+    margin: 0 auto;
 }
 
