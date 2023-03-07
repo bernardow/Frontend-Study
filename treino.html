@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="text-bg-dark">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Meu portfolio incrivel</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="navbar-collapse collapse justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Web</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Arte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Sidebar</h2>
+                </div>
+                <div class="col-md-9">
+                    <h2>Games</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Nome do jogo</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://via.placeholder.com/100x100" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cumque. Dolorum reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Nome do jogo</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://via.placeholder.com/100x100" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cumque. Dolorum reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    <h3>Nome do jogo</h3>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://via.placeholder.com/100x100" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cumque. Dolorum reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" id="modalBtn">Clique aqui</button>
+                    <div class="modal" id="modalTreino">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>Ola</h4>
+                                    <button data-bs-dismiss="modal" type="button" class="btn btn-close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste incidunt libero excepturi saepe possimus laboriosam earum non ullam repudiandae, odit, ab ducimus deleniti ipsum, dolor neque eum magni ut porro.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Okay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://via.placeholder.com/580x320" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://via.placeholder.com/5100x320" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://via.placeholder.com/380x320" alt="">
+                                    </div>
+                                </div>
+                                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button class="active" data-bs-slide-to="0" data-bs-target="#carousel"></button>
+                                    <button data-bs-slide-to="1" data-bs-target="#carousel"></button>
+                                    <button data-bs-slide-to="2" data-bs-target="#carousel"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="taost-container position-fixed bottom-0 end-0 p-3">
+        <div id="mensagem" class="toast">
+            <header class="toast-header">
+                <strong>Importante</strong>
+                <button class="btn btn-close end-0" data-bs-dismiss="toast" type="button"></button>
+            </header>
+            <div class="toast-body">
+                Voce possui 10 mensagens nao lidas
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const modalTreino = new bootstrap.Modal('#modalTreino');
+        const mensagem = document.getElementById('mensagem')
+        document.querySelector('#modalBtn').addEventListener('click', function(){
+            //modalTreino.show();
+            const toast = new bootstrap.Toast(mensagem);
+            toast.show();
+        })
+    </script>
+</body>
+</html>

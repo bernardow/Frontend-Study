@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+header{
+    padding: 18px;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, .4);
+}
