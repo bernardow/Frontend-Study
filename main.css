@@ -3,3 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
+time{
+    display: block;
+}
+
+
+.post{
+    margin-bottom: 24px;
+}
